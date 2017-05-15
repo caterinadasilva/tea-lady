@@ -3,44 +3,80 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Té como señora</title>
-	<link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Ejercicio Introducción a CSS">
+	<meta name="author" content="Caterina Da Silva">
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Raleway:300" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 	<header>
-		<h1>Tetería Té como Señora</h1>
+		<div class="container">
+			<h2>Tetería</h2>
+			<h1>Té como Señora</h1>
+			<p class="lead">Bienvenid@s a la Tetería Té como Señora. Ofrecemos los mejores tés del mercado a bajos precios, gracias a nuestro sistema de venta online y cajas del mes.</p>
+		</div>
 	</header>
-	<section id="formulario">
-		<p>Bienvenid@s a la Tetería Té como Señora. Ofrecemos los mejores tés del mercado a bajos precios, gracias a nuestro sistema de venta online y cajas del mes.</p>
-		<p>Si deseas suscribirte a nuestra caja de té mensual, rellena tus datos en el formulario</p>
-		<form action="">
-			<label for="Nombre Dueño"> Nombre:</label>
-			<input type="text">
-			<label for="Nombre mascota"> Apellido:</label>
-			<input type="text">
-			<label for="Email"> Correo Electrónico:</label> 
-			<input type="email">
-			<label for="Dirección">Dirección: </label>
-			<input type="text">
-			<label for="Teléfono">Teléfono:</label>
-			<input type="text">
-			<label for="">Selecciona un pack:</label>
-			<select name="" id="">
-				<option value="">Escoje tu opción</option>
-				<option value="">Pack de té clásico (Té negro)</option>
-				<option value="">Pack frutales (Hierbas y té con aromatizado con fruta</option>
-				<option value="">Pack variedades (Té verde, rojo y blanco)</option>
-			</select>
-			<label for=""></label>
-			<input type="checkbox"> Recibe nuestro newsletter mensual con actividades y sorteos
-			<button type="submit" form="form1" value="Submit" onclick="mostrarData()">Enviar</button>
-		</form>
-	</section>
-	<section id="clientes">
-		<!-- Acá van los datos de ingresados por los clientes -->
+	<section id="cuerpo">
+		<div class="container">
+			<section id="formulario">
+				<p>Si deseas suscribirte a nuestra caja de té mensual, rellena tus datos en el formulario</p>
+				<form action="">
+					<div>
+						<label for="Nombre"> Nombre:</label>
+						<input name="Nombre" id="firstName" type="text">
+					</div>
+					<div>
+						<label for="Apellido"> Apellido:</label>
+						<input for="Apellido" id="lastName" type="text">
+					</div>
+					<div>
+						<label for="Email"> Correo Electrónico:</label> 
+						<input name="Email" id="email" type="email">
+					</div>
+					<div>
+						<label for="Dirección">Dirección: </label>
+						<input id="address" name="Dirección" type="text">
+					</div>
+					<div>
+						<label for="Teléfono">Teléfono:</label>
+						<input id="phone" name="Teléfono" type="number">
+					</div>
+					<div>
+						<label for="selector">Selecciona un pack:</label>
+						<select name="selector" id="selector">
+							<option value="" disabled selected>Escoje tu opción</option>
+							<option value="Pack Clásico">Pack de té clásico (Té negro)</option>
+							<option value="Pack Frutal">Pack frutales (Hierbas y té con aromatizado con fruta</option>
+							<option value="Pack Variedades">Pack variedades (Té verde, rojo y blanco)</option>
+						</select>
+					</div>
+					<div>
+						<input id="check" name="check" type="checkbox">
+						<label for="check">Deseo recibir el newsletter mensual con actividades y sorteos de la tetería.</label>
+					</div>
+					<div>
+						<button class="btn" type="submit" form="form1" value="Submit" onclick="mostrarData()">Enviar</button>
+					</div>
+				</form>
+			</section>
+			<section id="clientes">
+				<!-- Acá van los datos de ingresados por los clientes -->
+				<h2>Nuestros Clientes</h2>
+			</section>
+		</div>
 	</section>
 	<section id="productos">
-		<!-- Acá puedes crear lo que quieras-->
+		<div class="container">
+			<h2>Nuestros Productos</h2>
+			<!-- Acá puedes crear lo que quieras-->
+		</div>
 	</section>
-	<script src="js/main.js"></script>
+	<footer>
+		<div class="container">
+			<small>Desarrollado por <span>Caterina Da Silva</span></small>
+		</div>
+	</footer>
+	<script src="assets/js/main.js"></script>
 </body>
 </html>

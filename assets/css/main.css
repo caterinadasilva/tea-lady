@@ -1,0 +1,259 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  background-color: #F8FAE4;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ESTILOS BÁSICOS */
+.container {
+  display: block;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+header {
+      background-color: #658361;
+    color: white;
+    padding: 5em 2em 2em;
+    margin-bottom: -5em;
+    text-align: center;
+    background-image: url(../img/te.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-height: 30em;
+    background-attachment: fixed;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Great Vibes', cursive;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: .05rem;
+  color: #546D51;
+}
+header h1, header h2 {
+  margin: 0 auto;
+  color: #fff;
+  text-align: left;
+}
+header h2 {
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    font-family: 'Raleway';
+    text-transform: lowercase;
+    font-variant: small-caps;
+    margin: 0 3em .25em;
+}
+header .lead {
+    text-align: left;
+    display: block;
+    margin: 2em 0 1em;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+    margin: .5em .5em 1em;
+    font-size: 3rem;
+    letter-spacing: .1rem;
+}
+h3 {
+  color: #658361;
+  margin: 3em 0 1em;
+  font-size: 2rem;
+}
+h4 {
+    font-size: 1.5rem;
+    text-align: left;
+}
+form {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 0 5%;
+  font-size: 85%;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  color: #658361;
+  margin: 1.2em 0 .5em;
+  float: left;
+}
+
+input, select {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #f1f1f1;
+    line-height: 120%;
+    padding: 1%;
+    font-size: 120%;
+    transition: .5s ease all;
+    background: rgba(255,255,255,.9);
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    font-weight: 800;
+    cursor: pointer;
+    color: #658361;
+    background-color: transparent;
+    letter-spacing: 1px;
+    font-size: 90%;
+    padding: 1em 1.5em;
+    transition: .5s ease all;
+    margin: 2em auto 1em;
+    border: 1px solid #658361;
+    width: 100%;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+    	background-color: #546D51;
+    transition: .5s ease all;
+    color: #fff;
+}
+
+p {
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  display: block;
+  margin: 1em 0;
+  line-height: 1.4;
+  text-align: center;
+}
+
+span {
+  border-bottom: 2px #658361 solid;
+  font-weight: 700;
+}
+
+b {
+  font-weight: 800;
+  color: #658361;
+}
+
+small {
+  font-size: .8rem;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 5em 0 0;
+    padding: 0 0 2em;
+    overflow: hidden;
+}
+
+/* INPUT NUMBER SIN FLECHAS */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+/* Especial */
+.lead {
+    max-width: 560px;
+    margin: 2em auto 1em;
+    font-size: 120%;
+        font-weight: 700;
+}
+input#check {
+	width: auto;
+	display: block;
+	float: left;
+	margin: 1.1em .5em .5em 0;
+}
+label[for|=check] {
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    width: 94%;
+}
+form div, #clientes, #productos {
+    overflow: hidden;
+}
+#formulario, #clientes, #productos {
+	margin: 3em 0;
+	overflow: hidden;
+	float: left;
+	display: block;
+}
+#formulario {
+    width: 36%;
+    background: #D0DD97;
+    padding: 2%;
+    float: none;
+    margin: 0 auto;
+    box-shadow:  0px 3px 10px #b0acac;
+}
+#formulario p {
+    margin: 1em 1.5em;
+}
+#clientes {
+  width: 100%;
+  text-align: center;
+}
+.dataBox {
+    width: 26%;
+    display: inline-block;
+    margin: 2em auto 0;
+    padding: 0px 3.5%;
+    text-align: left;
+}
+.dataBox p {
+    text-align: left;
+}
+#productos {
+    width: 100%;
+}
